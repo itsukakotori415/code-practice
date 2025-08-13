@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+
+<body>
+    <form action="https://search.jd.com/search">
+        <input type="text" name="keyword">
+        <button>去京东搜索</button><br>
+    </form>
+    <form action="https://search.jd.com/search" target="_self">
+        <fieldset style="width:min-content;">
+            <legend>登录</legend>
+            账号<input type="text" maxlength="10" placeholder="请输入账户">
+            <input type="password" placeholder="请输入密码" name="mima">
+            <input type="reset" value="点我重置">
+        </fieldset>
+        <fieldset style="width: fit-content;">
+            <legend>次要信息</legend>
+            <button type="reset">好小的按钮(重置)</button><br>
+            <input type="radio" value="male" name="gender" id="nan" checked>
+            <label for="nan">男</label>
+            <input type="radio" name="gender" value="famale" id="nv">
+            <label for="nv">女</label>
+            <label for="msg">文本域</label>
+            <textarea name="msg" id="msg" rows="3" cols="22"
+                readonly>你可以点击关联的标签来聚焦或者激活这个输入元素，就像直接点击输入元素一样。这扩大了元素的可点击区域，让包括使用触屏设备在内的用户更容易激活这个元素。</textarea><br>
+            <label for="country">选择国家</label>
+            <select name="country" id="country">
+                <option value="" disabled selected>请选择国家</option>
+                <option value="ZH">中国</option>
+                <option value="EN">美国</option>
+            </select><br>
+            <input type="checkbox">抽烟
+            <input type="checkbox">烫头
+            <input type="checkbox">喝酒
+            <button type="submit">搜索</button>
+        </fieldset>
+        <input type="color"><input type="date"><br>
+        <input type="file" accept=".png">
+        <input type="image" src="./favicon.ico" alt="点我提交">
+        <img src="./favicon.ico" alt="截图"><br>
+        <input type="number" placeholder="这里只能输入数字" maxlength="5">
+        <label for="huakuai">这是一个滑块</label>
+        <input type="range" id="huakuai" min="1" max="10">
+        <input type="search" placeholder="搜索框">
+    </form>
+    <form action="https://search.jd.com/search">
+        <input type="search" name="keyword" placeholder="搜你所想">
+        <input type="image" src="./favicon.ico" alt="🔍">
+    </form>
+</body>
+</html>
